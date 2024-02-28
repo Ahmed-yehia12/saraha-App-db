@@ -4,7 +4,6 @@ import { asyncHandler } from './../../utlis/asyncHandler.js';
 
 import { validation } from './../../middleware/validation.middleware.js';
 import { sendMessageSchema } from "./message.schema.js";
-import { isAuthenticated } from "../../middleWare/auth.middleWare.js";
 
 
 

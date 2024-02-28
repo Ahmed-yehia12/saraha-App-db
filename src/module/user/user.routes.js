@@ -4,7 +4,8 @@ import { User } from "../../../database/models/user.model.js";
 import { asyncHandler } from "../../utlis/asyncHandler.js";
 import {validation} from "../../middleware/validation.middleware.js"
 import { activateAccSchema, forgetCodeSchema, loginSchema,  resetCodeSchema, signupSchema } from "./user.schema.js";
-import { isAuthenticated } from "../../middleWare/auth.middleWare.js";
+import { isAuthenticated } from "../../middleware/auth.middleware.js";
+
 const userRouter = Router()
 
 userRouter.post('/signUp',validation(signupSchema) ,asyncHandler(userController.signUp ) );

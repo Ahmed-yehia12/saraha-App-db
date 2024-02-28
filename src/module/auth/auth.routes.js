@@ -2,7 +2,7 @@ import { Router } from "express";
 import * as authController from './auth.controller.js'
 import { asyncHandler } from "../../utlis/asyncHandler.js";
 import { fileValidation, uploadFile } from "../../utlis/multer.js";
-import { isAuthenticated } from "../../middleWare/auth.middleWare.js";
+import { isAuthenticated } from "../../middleware/auth.middleware.js";
 
 
  const authRouter = Router()
